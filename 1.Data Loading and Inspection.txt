@@ -1,0 +1,45 @@
+1.Data Loading and Inspection:
+                   -Loaded the dataset using Pandas.
+                   -Checked the basic information about the dataset, including data types and missing values.
+
+2.Data Cleaning:
+                   -Identified and addressed missing values in the "RM" feature using the mean value.
+                    Checked for duplicates and removed them.
+
+                   -Explored the distribution of the "CHAS" variable and its imbalance.
+
+3.Statistical Testing:
+                   -Conducted a T-test to test the significance of the "CHAS" variable in predicting property prices.
+                   
+                    -Formulated hypotheses and used a threshold level of 0.05 for significance.
+
+4.Exploratory Data Analysis (EDA):
+                   -Visualized the distribution of different features using histograms.
+
+                   -Calculated and examined the correlation matrix, focusing on the correlation with the target variable "MEDV."
+
+                   -Created scatter plots to visualize the relationships between "MEDV," "RM," "LSTAT," and "PTRATIO."
+
+5.Data Splitting:
+
+                   -Used Stratified Shuffle Split to maintain the ratio of values in the "CHAS" variable during train-test splitting.
+                    Split the data into training and testing sets.
+
+6.Model Training:
+                   -Utilized Linear Regression, Random Forest Regressor, and Support Vector Regressor for model training.
+                   
+                   -Evaluated model performance using Root Mean Squared Error (RSME).
+
+7.Cross-Validation:
+                   -Applied cross-validation to assess the Random Forest Regressor's performance.
+                   
+                   -Calculated the mean and standard deviation of RSME scores.
+
+8.Model Saving and Loading:
+
+                   -Used joblib to save and load the trained Random Forest Regressor model.
+
+9.Model Prediction:
+                   -Used the trained model to predict values on the test set.
+
+                   -Compared predicted values with the actual values from the test set.
